@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EDF9E80-56D2-427A-910C-83DDDAB78230}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiSMDR</RootNamespace>
+    <AssemblyName>MiSMDR</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <Win32Resource>
+    </Win32Resource>
+    <StartupObject>MiSMDR.SplashScreen</StartupObject>
+    <ManifestCertificateThumbprint>8D63A0CC44B39E5B75670D0F270977DF2A5C3311</ManifestCertificateThumbprint>
+    <ManifestKeyFile>MiStats_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <PublishUrl>D:\Work\new\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.1.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.65.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutMiSMDRForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutMiSMDRForm.Designer.cs">
+      <DependentUpon>AboutMiSMDRForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CallCostTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CallCostTestForm.Designer.cs">
+      <DependentUpon>CallCostTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CallInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CallInfo.Designer.cs">
+      <DependentUpon>CallInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyGenerator.Designer.cs">
+      <DependentUpon>KeyGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licensing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licensing.Designer.cs">
+      <DependentUpon>Licensing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiConfig.cs" />
+    <Compile Include="PluginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginForm.Designer.cs">
+      <DependentUpon>PluginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RegexHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegexHelp.Designer.cs">
+      <DependentUpon>RegexHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rldc.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="StartupSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupSplash.Designer.cs">
+      <DependentUpon>StartupSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridColourKey.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridColourKey.Designer.cs">
+      <DependentUpon>GridColourKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogForm.Designer.cs">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiForm.Designer.cs">
+      <DependentUpon>MiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CallInfo.resx">
+      <DependentUpon>CallInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridColourKey.resx">
+      <DependentUpon>GridColourKey.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogForm.resx">
+      <DependentUpon>LogForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiForm.resx">
+      <DependentUpon>MiForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Resources\App.config" />
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{E2907CCD-EB85-4E7B-8F72-7FE829F54234}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{1D8BED7D-7D26-4A16-9C76-3AF85874EFA6}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBIntegrity\DBIntegrity.csproj">
+      <Project>{660DC428-9AB8-4E02-AFE4-782D8B479FDA}</Project>
+      <Name>DBIntegrity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{4411A069-BFED-4E88-9015-81D1235343D6}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MitelManager\MitelManager.csproj">
+      <Project>{1B17042D-15E1-47C1-9E48-4C4237ADDFFC}</Project>
+      <Name>MitelManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Security\Security.csproj">
+      <Project>{1ABADDF5-F6AF-46D7-853D-49E243AF9CF7}</Project>
+      <Name>Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SessionTracker\Sessions.csproj">
+      <Project>{C050E823-BB15-494A-B8F0-AC693DC76A0A}</Project>
+      <Name>Sessions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutMiSMDRForm.resx">
+      <DependentUpon>AboutMiSMDRForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallCostTestForm.resx">
+      <DependentUpon>CallCostTestForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyGenerator.resx">
+      <DependentUpon>KeyGenerator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licensing.resx">
+      <DependentUpon>Licensing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginForm.resx">
+      <DependentUpon>PluginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegexHelp.resx">
+      <DependentUpon>RegexHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupSplash.resx">
+      <DependentUpon>StartupSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\MiStats.BusinessLogicLayer.CallManager.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\dashboard.png" />
+    <None Include="Resources\greenMi.ico" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\aboutscreen2.jpg" />
+    <None Include="Resources\about_screen3.png" />
+    <Content Include="icon.ico" />
+    <Content Include="mistats_logo.ico" />
+    <None Include="Resources\alert.png" />
+    <Content Include="Resources\logo_green.bmp" />
+    <Content Include="Resources\logo_green.png" />
+    <Content Include="Resources\redMi.ico" />
+    <Content Include="Resources\logo.gif" />
+    <None Include="Resources\tick1.png" />
+    <None Include="Resources\splash.jpg" />
+    <None Include="Resources\License.rtf" />
+    <None Include="Resources\quick.jpg" />
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

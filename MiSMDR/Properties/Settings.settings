@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MiSMDR.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MiProvider" Type="System.String" Scope="User">
+      <Value Profile="(Default)">notinstalled</Value>
+    </Setting>
+    <Setting Name="Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1752</Value>
+    </Setting>
+    <Setting Name="LogFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">notinstalled</Value>
+    </Setting>
+    <Setting Name="MiDatabaseString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">notinstalled</Value>
+    </Setting>
+    <Setting Name="WindowLocation" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="WindowSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">300, 300</Value>
+    </Setting>
+    <Setting Name="DemoMode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
+    <Setting Name="MiDemoString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">notinstalled</Value>
+    </Setting>
+    <Setting Name="RecordLimit" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="ShowDebug" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="ConnectOnStartup" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="ApplicationVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="StartWithWindows" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="WindowState" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="MinimiseToTray" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="ShowSplash" Type="System.String" Scope="User">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
+    <Setting Name="ShowNotifications" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

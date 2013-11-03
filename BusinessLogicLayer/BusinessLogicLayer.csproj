@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2907CCD-EB85-4E7B-8F72-7FE829F54234}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiStats.BusinessLogicLayer</RootNamespace>
+    <AssemblyName>MiStats.BusinessLogicLayer</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CallCategoryManager.cs" />
+    <Compile Include="CallManager.cs" />
+    <Compile Include="CallCategory.cs" />
+    <Compile Include="MiniObjects\CallType.cs" />
+    <Compile Include="Contact.cs" />
+    <Compile Include="ContactManager.cs" />
+    <Compile Include="PhoneNumber.cs" />
+    <Compile Include="PhoneNumberManager.cs" />
+    <Compile Include="SavedSearch.cs" />
+    <Compile Include="SavedSearchManager.cs" />
+    <Compile Include="MiniObjects\Direction.cs" />
+    <Compile Include="FileExport\Exporter.cs" />
+    <Compile Include="FileExport\FileManager.cs" />
+    <Compile Include="MiniObjects\ProcessManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MiniObjects\SearchObject.cs" />
+    <Compile Include="MiniObjects\ValidationError.cs" />
+    <Compile Include="TableClasses\MiColumn.cs" />
+    <Compile Include="TableClasses\MiTable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBIntegrity\DBIntegrity.csproj">
+      <Project>{660DC428-9AB8-4E02-AFE4-782D8B479FDA}</Project>
+      <Name>DBIntegrity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{4411A069-BFED-4E88-9015-81D1235343D6}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{1D8BED7D-7D26-4A16-9C76-3AF85874EFA6}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
